@@ -26,3 +26,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'furo'
 html_static_path = ['_static']
+
+# -- Options for furo theme --------------------------------------------------
+# https://pradyunsg.me/furo/customisation/logo/
+# https://pradyunsg.me/furo/customisation/edit-button/
+html_theme_options = {
+    'light_logo': 'logo.png',
+    'dark_logo': 'logo.png',
+    'source_repository': 'https://github.com/maerkl24/hockeyclock/',
+    'source_branch': 'main',
+    'source_directory': 'docs/',
+}
