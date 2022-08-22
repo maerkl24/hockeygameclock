@@ -1,0 +1,9 @@
+@startuml Components
+
+[Timer]
+
+[UI]
+
+[Manager]
+
+@enduml

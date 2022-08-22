@@ -1,0 +1,9 @@
+# Tools
+Sphinx>=5.1.1
+furo>=2022.6.21
+pytest>=7.1.2
+pylint>=2.14.5
+yapf>=0.32.0
+
+# Modules
+PySide6>=6.3.1

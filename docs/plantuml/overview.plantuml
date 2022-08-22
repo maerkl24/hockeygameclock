@@ -1,0 +1,35 @@
+@startuml Overview
+
+class Player {
+    - int number
+}
+
+class Penalty {
+    - Player player
+    - time duration
+    - bool active
+    - bool pending
+    - time start_time
+    - time end_time
+}
+Penalty "1" o-- "1" Player
+
+class Goal {
+    - time time
+}
+Goal "1" o-- "1..2" Player
+
+class Team {
+    - list goals
+    - list penalties
+}
+Team "1" o-- "0..*" Goal
+Team "1" o-- "0..*" Penalty
+
+class Game {
+    - Team home
+    - Team guest
+}
+Game "1" o-- "2" Team
+
+@enduml
