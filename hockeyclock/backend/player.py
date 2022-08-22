@@ -7,7 +7,8 @@ Position = Literal['C', 'A', 'G', 'F']
 
 
 class Player():
-    """Class representing a player."""
+    """Class representing a player.
+    """
 
     def __init__(self,
                  number: int,
@@ -20,3 +21,6 @@ class Player():
         self.forename = forename
         self.surname = surname
         self.pass_number = pass_number
+
+    def hans(self):
+        return 'ABC'

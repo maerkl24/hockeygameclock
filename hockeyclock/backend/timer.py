@@ -1,5 +1,6 @@
 """Timer module.
 """
+# pylint: disable=no-name-in-module
 from PySide6.QtCore import QTime
 
 
