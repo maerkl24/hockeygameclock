@@ -29,7 +29,7 @@ deactivate
 yapf --style google -i -r hockeyclock
 
 # Lint Python code
-pylint --rcfile pylintrc hockeyclock
+pylint --rcfile .pylintrc hockeyclock
 
 # Build the docs
 cd docs

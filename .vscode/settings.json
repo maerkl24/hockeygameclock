@@ -1,8 +1,21 @@
 {
-    "editor.rulers": [120],
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "editor.rulers": [
+        120
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.envFile": "${workspaceFolder}/.venv",
     "python.linting.pylintEnabled": true,
-    "python.linting.pylintArgs": ["--rcfile", "${workspaceFolder}/.pylintrc"],
+    "python.linting.pylintArgs": [
+        "--rcfile",
+        "${workspaceFolder}/.pylintrc"
+    ],
+    "editor.formatOnSave": true,
     "python.formatting.provider": "yapf",
-    "python.formatting.yapfArgs": ["--style", "google", "-i", "-r", "hockeyclock"],
+    "python.formatting.yapfArgs": [
+        "--style",
+        "google",
+        "-i",
+        "-r",
+        "hockeyclock"
+    ],
 }
