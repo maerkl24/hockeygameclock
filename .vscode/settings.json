@@ -1,0 +1,8 @@
+{
+    "editor.rulers": [120],
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": ["--rcfile", "${workspaceFolder}/.pylintrc"],
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": ["--style", "google", "-i", "-r", "hockeyclock"],
+}
