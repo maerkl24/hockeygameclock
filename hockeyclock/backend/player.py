@@ -3,7 +3,7 @@
 from typing import Optional, Literal
 
 # Position for Player
-Position = Literal["C", "A", "G", "F"]
+PositionType = Literal["C", "A", "G", "F"]
 
 
 # pylint: disable=too-few-public-methods
@@ -14,7 +14,7 @@ class Player:
     def __init__(
         self,
         number: int,
-        position: Optional[Position] = None,
+        position: Optional[PositionType] = None,
         forename: Optional[str] = None,
         surname: Optional[str] = None,
         pass_number: Optional[int] = None,
