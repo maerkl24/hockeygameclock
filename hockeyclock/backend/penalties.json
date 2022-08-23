@@ -1,0 +1,19 @@
+[
+    {
+        "code": "A",
+        "name": "Behinderung",
+        "penalties": [
+            "2"
+        ]
+    },
+    {
+        "code": "B",
+        "name": "Unerlaubter Körperangriff",
+        "penalties": [
+            "2",
+            "5",
+            "5+GM",
+            "MP"
+        ]
+    }
+]

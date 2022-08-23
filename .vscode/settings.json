@@ -6,16 +6,7 @@
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
     "python.envFile": "${workspaceFolder}/.venv",
     "python.linting.pylintEnabled": true,
-    "python.linting.pylintArgs": [],
     "python.linting.mypyEnabled": true,
-    "python.linting.mypyArgs": [],
     "editor.formatOnSave": true,
-    "python.formatting.provider": "yapf",
-    "python.formatting.yapfArgs": [
-        "--style",
-        "google",
-        "-i",
-        "-r",
-        "hockeyclock"
-    ],
+    "python.formatting.provider": "black",
 }

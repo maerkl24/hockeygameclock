@@ -1,17 +1,16 @@
 """Timer module.
 """
 # pylint: disable=no-name-in-module
-from PySide6.QtCore import QTime
+from PySide6.QtCore import QTime, QElapsedTimer
 
 
-class Timer():
-    """Timer to measure elapsed time.
-    """
+class Timer:
+    """Timer to measure elapsed time."""
 
     def __init__(self):
-        self.last_time = QTime(0, 0, 0, 0)
-        self.running_time = QTime()
-        self.running = False
+        self.last_time: QTime = QTime(0, 0, 0, 0)
+        self.running_time: QElapsedTimer = QElapsedTimer()
+        self.running: bool = False
 
     def start(self):
         if self.running:
@@ -20,8 +19,7 @@ class Timer():
 
     def stop(self):
         if self.running:
-            self.last_time = self.last_time.addMSecs(
-                self.running_time.elapsed())
+            self.last_time = self.last_time.addMSecs(self.running_time.elapsed())
             self.running = False
 
     def reset(self):

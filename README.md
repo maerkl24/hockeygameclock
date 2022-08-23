@@ -9,7 +9,7 @@
 python -m venv .venv
 
 # Activate virtual environment
-.venv\Scripts\activate.bat
+.venv/Scripts/activate.bat
 
 # Install Python packages
 python -m pip install --upgrade pip
@@ -23,23 +23,23 @@ deactivate
 
 ```bash
 # Activate virtual environment
-.venv\Scripts\activate.bat
+.venv/Scripts/activate.bat
 
 # Format Python code
-yapf --style google -i -r hockeyclock
+black hockeyclock/
 
 # Lint Python code
-pylint --rcfile .pylintrc hockeyclock
+pylint hockeyclock/
 
 # Type check Python code
-mypy hockeyclock
+mypy hockeyclock/
 
 # Build the docs
 cd docs
 make html
 
 # Execute Python tests
-pytest tests
+pytest tests/
 ```
 
 ## Create Executable

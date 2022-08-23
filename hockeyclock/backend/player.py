@@ -3,24 +3,33 @@
 from typing import Optional, Literal
 
 # Position for Player
-Position = Literal['C', 'A', 'G', 'F']
+Position = Literal["C", "A", "G", "F"]
 
 
-class Player():
-    """Class representing a player.
-    """
+# pylint: disable=too-few-public-methods
+class Player:
+    """Class representing a player."""
 
-    def __init__(self,
-                 number: int,
-                 position: Optional[Position] = None,
-                 forename: Optional[str] = None,
-                 surname: Optional[str] = None,
-                 pass_number: Optional[int] = None) -> None:
+    # pylint: disable=too-many-arguments
+    def __init__(
+        self,
+        number: int,
+        position: Optional[Position] = None,
+        forename: Optional[str] = None,
+        surname: Optional[str] = None,
+        pass_number: Optional[int] = None,
+    ) -> None:
+        """Constructor.
+
+        Args:
+            number: The players jersey number.
+            position: The players position.
+            forename: The players forename.
+            surname: The players surname.
+            pass_number: The players pass number.
+        """
         self.number = number
         self.position = position
         self.forename = forename
         self.surname = surname
         self.pass_number = pass_number
-
-    def hans(self):
-        return 'ABC'
