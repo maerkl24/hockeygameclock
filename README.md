@@ -42,12 +42,12 @@ pylint tests
 mypy hockeyclock
 mypy tests
 
+# Execute Python tests and measure coverage
+pytest
+
 # Build the docs
 cd docs
 make html
-
-# Execute Python tests
-pytest tests
 ```
 
 ## Create Executable

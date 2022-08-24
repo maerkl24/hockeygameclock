@@ -5,5 +5,8 @@ __pycache__/
 # Python virtual environment
 /.venv/
 
+# Python pytest coverage results
+.coverage
+
 # Sphinx build folder
 docs/_build/
