@@ -4,58 +4,40 @@
 
 ### Setup Environment
 
-```bash
-# Install Python virtual environment
+```bat
+:: Install Python virtual environment
 python -m venv .venv
 
-# Activate virtual environment
+:: Activate virtual environment
 .venv\Scripts\activate.bat
 
-# Install Python hockeyclock module and its dependencies
+:: Install Python hockeyclock module and its dependencies
 python -m pip install -e .
-# Install Python hockeyclock module and its dev dependencies
+:: Install Python hockeyclock module and its dev dependencies
 python -m pip install -e .[dev]
 
-# Deactivate virtual environment
+:: Deactivate virtual environment
 deactivate
 ```
 
 ### Execute Tools
 
-```bash
-# Activate virtual environment
-.venv/Scripts/activate.bat
-
-# Sort imports
-isort hockeyclock
-isort tests
-
-# Format Python code
-black hockeyclock
-black tests
-
-# Lint Python code
-pylint hockeyclock
-pylint tests
-
-# Type check Python code
-mypy hockeyclock
-mypy tests
-
-# Execute Python tests and measure coverage
-pytest
-
-# Build the docs
-cd docs
-make html
+```bat
+:: Execute tools
+tools.bat
 ```
 
 ## Create Executable
 
-```bash
-pyinstaller --onefile --windowed --name HockeyClock --icon=icon/HockeyClock.ico py/main.py
+```bat
+:: Create executable
+pyinstaller --onefile --windowed --name HockeyClock --icon=icon\HockeyClock.ico py\main.py
 ```
 
-## ToDos
+## TODOs
 
-* A lot ...
+- [ ] Backend
+- [ ] Tests
+- [ ] Packaging/Executable
+- [ ] User Inferface
+- [ ] ...
