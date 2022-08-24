@@ -42,4 +42,4 @@ warn_return_any = true
 
 [tool.isort]
 profile = "black"
-line-length = 120
+line_length = 120

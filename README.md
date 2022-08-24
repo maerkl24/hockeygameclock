@@ -9,7 +9,7 @@
 python -m venv .venv
 
 # Activate virtual environment
-.venv/Scripts/activate.bat
+.venv\Scripts\activate.bat
 
 # Install Python hockeyclock module and its dependencies
 python -m pip install -e .
@@ -27,27 +27,27 @@ deactivate
 .venv/Scripts/activate.bat
 
 # Sort imports
-isort hockeyclock/
-isort tests/
+isort hockeyclock
+isort tests
 
 # Format Python code
-black hockeyclock/
-black tests/
+black hockeyclock
+black tests
 
 # Lint Python code
-pylint hockeyclock/
-pylint tests/
+pylint hockeyclock
+pylint tests
 
 # Type check Python code
-mypy hockeyclock/
-mypy tests/
+mypy hockeyclock
+mypy tests
 
 # Build the docs
 cd docs
 make html
 
 # Execute Python tests
-pytest tests/
+pytest tests
 ```
 
 ## Create Executable
