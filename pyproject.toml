@@ -1,0 +1,45 @@
+[build-system]
+requires = ['setuptools', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name            = 'hockeyclock'
+version         = '1.0.0'
+description     = 'Nice hockey clock for timekeeper.'
+authors         = [{name = 'Kilian Märkl'}]
+requires-python = '>=3.10.5'
+dependencies    = ['PySide6>=6.3.1']
+
+[project.urls]
+repository = 'https://github.com/maerkl24/hockeyclock'
+
+[project.optional-dependencies]
+dev = [
+    'Sphinx>=5.1.1',
+    'furo>=2022.6.21',
+    'pytest>=7.1.2',
+    'pylint>=2.14.5',
+    'black>=22.6.0',
+    'mypy>=0.971',
+    'isort>=5.10.1',
+]
+
+[tool.setuptools]
+packages = ['hockeyclock']
+
+[tool.black]
+line-length = 120
+#include = '(hockeyclock|tests)\/.*(\.pyi?|\.ipynb)$'
+
+[tool.pylint]
+max-line-length = 120
+disable = ['too-many-arguments', 'too-few-public-methods', 'fixme']
+load-plugins = ['pylint.extensions.docparams']
+default-docstring-type = 'google'
+
+[tool.mypy]
+warn_return_any = true
+
+[tool.isort]
+profile = "black"
+line-length = 120

@@ -1,51 +1,15 @@
 {
     "penalties": [
-        {
-            "id": "2",
-            "time": "2:00"
-        },
-        {
-            "id": "5",
-            "time": "5:00"
-        },
-        {
-            "id": "10",
-            "time": "10:00"
-        },
-        {
-            "id": "GM",
-            "time": null
-        },
-        {
-            "id": "5+GM",
-            "time": "5:00"
-        },
-        {
-            "id": "10+GM",
-            "time": "10:00"
-        },
-        {
-            "id": "MP",
-            "time": "5:00"
-        }
+        {"id": "2", "time": "2:00"},
+        {"id": "5", "time": "5:00"},
+        {"id": "10", "time": "10:00"},
+        {"id": "GM", "time": null},
+        {"id": "5+GM", "time": "5:00"},
+        {"id": "10+GM", "time": "10:00"},
+        {"id": "MP", "time": "5:00"},
     ],
     "fouls": [
-        {
-            "code": "A",
-            "name": "Behinderung",
-            "penalties": [
-                "2"
-            ]
-        },
-        {
-            "code": "B",
-            "name": "Unerlaubter Körperangriff",
-            "penalties": [
-                "2",
-                "5",
-                "5+GM",
-                "MP"
-            ]
-        }
-    ]
+        {"code": "A", "name": "Behinderung", "penalties": ["2"]},
+        {"code": "B", "name": "Unerlaubter Körperangriff", "penalties": ["2", "5", "5+GM", "MP"]},
+    ],
 }

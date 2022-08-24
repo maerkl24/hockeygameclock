@@ -11,9 +11,10 @@ python -m venv .venv
 # Activate virtual environment
 .venv/Scripts/activate.bat
 
-# Install Python packages
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+# Install Python hockeyclock module and its dependencies
+python -m pip install -e .
+# Install Python hockeyclock module and its dev dependencies
+python -m pip install -e .[dev]
 
 # Deactivate virtual environment
 deactivate
@@ -27,15 +28,19 @@ deactivate
 
 # Sort imports
 isort hockeyclock/
+isort tests/
 
 # Format Python code
 black hockeyclock/
+black tests/
 
 # Lint Python code
 pylint hockeyclock/
+pylint tests/
 
 # Type check Python code
 mypy hockeyclock/
+mypy tests/
 
 # Build the docs
 cd docs

@@ -1,8 +1,9 @@
-# Python cache
+# Python artefacts
 __pycache__/
+*.egg-info/
 
 # Python virtual environment
 /.venv/
 
-# Sphinx build
+# Sphinx build folder
 docs/_build/
