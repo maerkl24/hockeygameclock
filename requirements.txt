@@ -5,6 +5,7 @@ pytest>=7.1.2
 pylint>=2.14.5
 black>=22.6.0
 mypy>=0.971
+isort>=5.10.1
 
 # Modules
 PySide6>=6.3.1

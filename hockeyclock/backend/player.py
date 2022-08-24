@@ -1,6 +1,6 @@
 """Player module.
 """
-from typing import Optional, Literal
+from typing import Literal, Optional
 
 # Position for Player
 PositionType = Literal["C", "A", "G", "F"]

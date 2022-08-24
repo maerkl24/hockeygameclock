@@ -1,9 +1,9 @@
 """Penalty module.
 """
-from typing import Optional, Literal
 from datetime import timedelta
-from hockeyclock.backend.player import Player
+from typing import Literal, Optional
 
+from hockeyclock.backend.player import Player
 
 # Possible penalties
 PenaltiesType = Literal["2", "5", "10", "GM", "5+GM", "10+GM", "MP"]
@@ -69,10 +69,37 @@ class Penalty:
         # TODO: set remaining time here
         self.remaining_time: timedelta
 
-    def start(self, start_time: timedelta) -> None:
-        """Start Penalty.
+    def set_start_time(self, start_time: timedelta) -> None:
+        """Set start time of penalty.
 
         Args:
             start_time: The start time.
         """
         self.start_time = start_time
+
+    def set_end_time(self, end_time: timedelta) -> None:
+        """Set edn time of penalty.
+
+        Args:
+            end_time: The end time.
+        """
+        self.end_time = end_time
+
+    def update_remaining_time(self, elapsed_time: timedelta) -> None:
+        """Update remaining time of penalty.
+
+        Args:
+            elapsed_time: Elapsed time since last call.
+        """
+        self.remaining_time -= elapsed_time
+
+    def is_over(self) -> bool:
+        """Check if penalty is over.
+
+        Returns:
+            bool: True if penalty is over, otherwise False.
+        """
+        # check if remaining time is less than or equal to zero
+        if self.remaining_time <= timedelta(0):
+            return True
+        return False

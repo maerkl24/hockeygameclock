@@ -1,10 +1,10 @@
 """Penalty Manager module.
 """
 
-from typing import List, Literal
 from datetime import timedelta
-from hockeyclock.backend.penalty import Penalty
+from typing import List, Literal
 
+from hockeyclock.backend.penalty import Penalty
 
 # Values for team
 TeamType = Literal["home", "guest"]
@@ -57,16 +57,17 @@ class PenaltyManager:
         Args:
             elapsed_time: Elapsed time since last update_time() call.
         """
+        # TODO: Execute code for home and guest
         penalties_pending = self.home_penalties_pending
         penalties_active = self.home_penalties_active
         penalties_expired = self.home_penalties_expired
 
         # iterate over all active penalties
         for idx, penalty_active in enumerate(penalties_active):
-            # decrease remaining time of penalty
-            penalty_active.remaining_time -= elapsed_time
-            # check if remaining time is less than or equal to zero
-            if penalty_active.remaining_time <= timedelta(0, 0, 0, 0):
+            # update remaining time of penalty
+            penalty_active.update_remaining_time(elapsed_time)
+            # check if penalty is over
+            if penalty_active.is_over():
                 # move penalty to expired list
                 penalties_expired.append(penalties_active.pop(idx))
                 # check if there are pending penalties

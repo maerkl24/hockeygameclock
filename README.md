@@ -25,6 +25,9 @@ deactivate
 # Activate virtual environment
 .venv/Scripts/activate.bat
 
+# Sort imports
+isort hockeyclock/
+
 # Format Python code
 black hockeyclock/
 

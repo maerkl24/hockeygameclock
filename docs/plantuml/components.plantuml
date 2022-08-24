@@ -1,9 +1,9 @@
 @startuml Components
 
-[Timer]
-
 [UI]
 
-[Manager]
+[TimeManager]
+
+[PenaltyManager]
 
 @enduml
