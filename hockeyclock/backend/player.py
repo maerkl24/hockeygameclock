@@ -6,11 +6,9 @@ from typing import Literal, Optional
 PositionType = Literal["C", "A", "G", "F"]
 
 
-# pylint: disable=too-few-public-methods
 class Player:
     """Class representing a player."""
 
-    # pylint: disable=too-many-arguments
     def __init__(
         self,
         number: int,

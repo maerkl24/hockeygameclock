@@ -6,7 +6,6 @@ from typing import Optional
 from hockeyclock.backend.player import Player
 
 
-# pylint: disable=too-few-public-methods
 class Goal:
     """Class representing a goal."""
 
