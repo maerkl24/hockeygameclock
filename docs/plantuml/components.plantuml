@@ -4,6 +4,8 @@
 
 [TimeManager]
 
+[GoalManager]
+
 [PenaltyManager]
 
 @enduml

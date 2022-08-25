@@ -9,9 +9,22 @@ class Player {
 }
 
 class Penalty {
+    - str code
+    - str name 
+    - timedelta time
+}
+
+class Offense {
+    - str code
+    - str name 
+    - List[Penalty] possible_penalties
+}
+Offense "1" *-- "1..*" Penalty
+
+class PlayerPenalty {
     - Player player
-    - PenaltiesType penalty 
-    - Optional[str] code
+    - Penalty penalty 
+    - Optional[Offense] offense
     - timedelta start_time
     - timedelta end_time
     - timedelta remaining_time
@@ -20,26 +33,28 @@ class Penalty {
     + update_remaining_time(elapsed_time)
     + is_over() -> bool
 }
-Penalty "1" *-- "1" Player
+PlayerPenalty "1" *-- "1" Player
+PlayerPenalty "1" *-- "1" Penalty
+PlayerPenalty "1" o-- "1" Offense
 
 class PenatlyManager {
-    - List[Penalty] home_penalties_pending
-    - List[Penalty] home_penalties_active
-    - List[Penalty] home_penalties_expired
-    - List[Penalty] guest_penalties_pending
-    - List[Penalty] guest_penalties_active
-    - List[Penalty] guest_penalties_expired
+    - List[PlayerPenalty] home_penalties_pending
+    - List[PlayerPenalty] home_penalties_active
+    - List[PlayerPenalty] home_penalties_expired
+    - List[PlayerPenalty] guest_penalties_pending
+    - List[PlayerPenalty] guest_penalties_active
+    - List[PlayerPenalty] guest_penalties_expired
     + add_penalty(team, penalty)
     + update_time(elapsed_time)
 }
-PenatlyManager "1" o-- "0..*" Penalty
+PenatlyManager "1" o-- "0..*" PlayerPenalty
 
 class Goal {
     - timedelta time
     - Player scorer
     - Optional[Player] assist
 }
-Goal "1" o-- "1..2" Player
+Goal "1" *-- "1..2" Player
 
 class GoalManager {
     - List[Goal] home_goals
@@ -47,18 +62,5 @@ class GoalManager {
     + add_goal(team, goal)
 }
 GoalManager "1" o-- "0..*" Goal
-
-class Team {
-    - list goals
-    - list penalties
-}
-Team "1" o-- "0..*" Goal
-Team "1" o-- "0..*" Penalty
-
-class Game {
-    - Team home
-    - Team guest
-}
-Game "1" o-- "2" Team
 
 @enduml
