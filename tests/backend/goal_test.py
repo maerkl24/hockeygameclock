@@ -17,7 +17,7 @@ def test_goal_constructor():
 
 
 def test_goal_constructor_with_optionals():
-    """Test constructor of Goal class."""
+    """Test constructor of Goal class with all optional arguments."""
     time = timedelta(minutes=2)
     scorer = Player(number=24)
     assist = Player(number=10)

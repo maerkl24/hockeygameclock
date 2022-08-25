@@ -4,7 +4,7 @@
 from datetime import timedelta
 from typing import List, Literal
 
-from hockeyclock.backend.penalty import Penalty
+from hockeyclock.backend.player_penalty import PlayerPenalty
 
 # Values for team
 TeamType = Literal["home", "guest"]
@@ -16,14 +16,14 @@ class PenaltyManager:
     def __init__(self) -> None:
         """Constructor."""
         self.max_active_penalties = 2
-        self.home_penalties_pending: List[Penalty]
-        self.home_penalties_active: List[Penalty]
-        self.home_penalties_expired: List[Penalty]
-        self.guest_penalties_pending: List[Penalty]
-        self.guest_penalties_active: List[Penalty]
-        self.guest_penalties_expired: List[Penalty]
+        self.home_penalties_pending: List[PlayerPenalty]
+        self.home_penalties_active: List[PlayerPenalty]
+        self.home_penalties_expired: List[PlayerPenalty]
+        self.guest_penalties_pending: List[PlayerPenalty]
+        self.guest_penalties_active: List[PlayerPenalty]
+        self.guest_penalties_expired: List[PlayerPenalty]
 
-    def add_penalty(self, team: TeamType, penalty: Penalty) -> None:
+    def add_penalty(self, team: TeamType, penalty: PlayerPenalty) -> None:
         """Add new penalty.
 
         Args:
