@@ -5,26 +5,15 @@
 ### Setup Environment
 
 ```bat
-:: Install Python virtual environment
-python -m venv .venv
-
-:: Activate virtual environment
-.venv\Scripts\activate.bat
-
-:: Install Python hockeyclock module and its dependencies
-python -m pip install -e .
-:: Install Python hockeyclock module and its dev dependencies
-python -m pip install -e .[dev]
-
-:: Deactivate virtual environment
-deactivate
+:: Setup environment
+setup_env.bat
 ```
 
 ### Execute Tools
 
 ```bat
 :: Execute tools
-tools.bat
+exec_tools.bat
 ```
 
 ## Create Executable
