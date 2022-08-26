@@ -9,4 +9,7 @@
     "python.linting.mypyEnabled": true,
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
+    "cSpell.words": [
+        "hockeygameclock"
+    ],
 }
