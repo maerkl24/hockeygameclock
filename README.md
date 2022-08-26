@@ -1,8 +1,14 @@
-# Hockey Clock
+![Hockey Game Clock Banner](banner.png)
+
+# Hockey Game Clock
+
+A nice hockey game clock for timekeepers.
 
 ## Getting Started
 
 ### Setup Environment
+
+To setup the development environment execute the
 
 ```bat
 :: Setup environment
@@ -14,13 +20,6 @@ setup_env.bat
 ```bat
 :: Execute tools
 exec_tools.bat
-```
-
-## Create Executable
-
-```bat
-:: Create executable
-pyinstaller --onefile --windowed --name HockeyClock --icon=icon\HockeyClock.ico py\main.py
 ```
 
 ## TODOs

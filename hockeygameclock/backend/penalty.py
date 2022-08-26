@@ -1,4 +1,6 @@
 """Penalty module.
+
+This module defines the :class:`Penalty` class and instantiates all allowed penalties.
 """
 
 from datetime import timedelta

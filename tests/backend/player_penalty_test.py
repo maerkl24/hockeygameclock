@@ -1,11 +1,11 @@
-"""Tests for PlayerPenalty class.
+"""Tests for :class:`PlayerPenalty` class.
 """
 from datetime import timedelta
 
-from hockeyclock.backend.offense import OFF_A
-from hockeyclock.backend.penalty import PEN_2, PEN_GM
-from hockeyclock.backend.player import Player
-from hockeyclock.backend.player_penalty import PlayerPenalty
+from hockeygameclock.backend.offense import OFF_A
+from hockeygameclock.backend.penalty import PEN_2, PEN_GM
+from hockeygameclock.backend.player import Player
+from hockeygameclock.backend.player_penalty import PlayerPenalty
 
 
 def test_player_penalty_constructor():

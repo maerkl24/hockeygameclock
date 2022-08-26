@@ -3,15 +3,18 @@ requires = ['setuptools', 'wheel']
 build-backend = 'setuptools.build_meta'
 
 [project]
-name            = 'hockeyclock'
+name            = 'hockeygameclock'
 version         = '1.0.0'
-description     = 'Nice hockey clock for timekeeper.'
+description     = 'Nice hockey game clock for timekeepers.'
 authors         = [{name = 'Kilian Märkl'}]
+maintainers     = [{name = 'Kilian Märkl'}, {name = 'Raphaela Märkl'}]
+license         = {file = "LICENSE"}
+readme          = "README.md"
 requires-python = '>=3.10.5'
 dependencies    = ['PySide6>=6.3.1']
 
 [project.urls]
-repository = 'https://github.com/maerkl24/hockeyclock'
+repository = 'https://github.com/maerkl24/hockeygameclock'
 
 [project.optional-dependencies]
 dev = [
@@ -26,11 +29,11 @@ dev = [
 ]
 
 [tool.setuptools]
-packages = ['hockeyclock']
+packages = ['hockeygameclock']
 
 [tool.black]
 line-length = 120
-#include = '(hockeyclock|tests)\/.*(\.pyi?|\.ipynb)$'
+#include = '(hockeygameclock|tests)\/.*(\.pyi?|\.ipynb)$'
 
 [tool.pylint]
 max-line-length = 120
@@ -46,5 +49,5 @@ profile = "black"
 line_length = 120
 
 [tool.pytest.ini_options]
-addopts = "--cov=hockeyclock"
+addopts = "--cov=hockeygameclock"
 testpaths = ['tests']

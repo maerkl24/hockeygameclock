@@ -1,10 +1,12 @@
-"""Goal Manager module.
+"""GoalManager module.
+
+This module defines the :class:`GoalManger` class.
 """
 
 from typing import List
 
-from hockeyclock.backend.goal import Goal
-from hockeyclock.backend.penalty_manager import TeamType
+from hockeygameclock.backend.goal import Goal
+from hockeygameclock.backend.types import TeamType
 
 
 class GoalManager:
@@ -15,23 +17,18 @@ class GoalManager:
         self.home_goals: List[Goal]
         self.guest_goals: List[Goal]
 
-    def add_goal(self, team: TeamType, goal: Goal) -> None:
+    def _add_goal(self, team: TeamType, goal: Goal) -> None:
         """Add new goal.
 
         Args:
             team: The to which scored the goal.
             goal: The goal.
-
-        Raises:
-            ValueError: If `team` is invalid.
         """
         # select goal lists for home or guest team
-        if team == "home":
+        if team == TeamType.HOME:
             goals = self.home_goals
-        elif team == "guest":
+        elif team == TeamType.GUEST:
             goals = self.guest_goals
-        else:
-            raise ValueError(f'Invalid value "{team}" for team! Valid values are "home" or "guest".')
 
         # append goal to goal list
         goals.append(goal)

@@ -7,9 +7,9 @@ call .venv\Scripts\activate.bat
 :: Upgrade pip
 python -m pip install --upgrade pip
 
-:: Install Python hockeyclock module and its dependencies
+:: Install Python hockeygameclock module and its dependencies
 ::python -m pip install -e .
-:: Install Python hockeyclock module and its development dependencies
+:: Install Python hockeygameclock module and its development dependencies
 python -m pip install -e .[dev]
 
 :: Deactivate virtual environment

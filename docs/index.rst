@@ -1,5 +1,5 @@
-Welcome to hockeyclock's documentation!
-=======================================
+Welcome to hockeygameclock's documentation!
+===========================================
 
 
 .. toctree::

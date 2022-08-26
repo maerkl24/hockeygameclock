@@ -1,11 +1,13 @@
-"""Player Penalty module.
+"""PlayerPenalty module.
+
+This module defines the :class:`PlayerPenalty` class.
 """
 from datetime import timedelta
 from typing import Optional
 
-from hockeyclock.backend.offense import Offense
-from hockeyclock.backend.penalty import Penalty
-from hockeyclock.backend.player import Player
+from hockeygameclock.backend.offense import Offense
+from hockeygameclock.backend.penalty import Penalty
+from hockeygameclock.backend.player import Player
 
 
 class PlayerPenalty:

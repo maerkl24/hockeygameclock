@@ -1,6 +1,6 @@
-"""Tests for Player class.
+"""Tests for :class:`Player` class.
 """
-from hockeyclock.backend.player import Player
+from hockeygameclock.backend.player import Player
 
 
 def test_player_constructor():

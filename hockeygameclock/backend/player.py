@@ -1,8 +1,11 @@
 """Player module.
+
+This module defines the :class:`Player` class.
 """
 from typing import Literal, Optional
 
 # Position for Player
+# TODO: Maybe change to Enum
 PositionType = Literal["C", "A", "G", "F"]
 
 

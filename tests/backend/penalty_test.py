@@ -1,8 +1,8 @@
-"""Tests for Penalty class.
+"""Tests for :class:`Penalty` class.
 """
 from datetime import timedelta
 
-from hockeyclock.backend.penalty import Penalty
+from hockeygameclock.backend.penalty import Penalty
 
 
 def test_penalty_constructor():

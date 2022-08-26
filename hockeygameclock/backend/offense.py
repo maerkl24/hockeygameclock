@@ -1,9 +1,11 @@
 """Offense module.
+
+This module defines the :class:`Offense` class and instantiates all allowed offenses.
 """
 
 from typing import List
 
-from hockeyclock.backend.penalty import PEN_2, PEN_5, PEN_5GM, PEN_10, PEN_GM, PEN_MP, Penalty
+from hockeygameclock.backend.penalty import PEN_2, PEN_5, PEN_5GM, PEN_10, PEN_GM, PEN_MP, Penalty
 
 
 class Offense:

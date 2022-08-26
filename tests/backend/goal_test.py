@@ -1,9 +1,9 @@
-"""Tests for Goal class.
+"""Tests for :class:`Goal` class.
 """
 from datetime import timedelta
 
-from hockeyclock.backend.goal import Goal
-from hockeyclock.backend.player import Player
+from hockeygameclock.backend.goal import Goal
+from hockeygameclock.backend.player import Player
 
 
 def test_goal_constructor():

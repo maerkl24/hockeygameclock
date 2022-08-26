@@ -30,10 +30,10 @@ Execute Tools
     .venv\Scripts\activate.bat
 
     # Format Python code
-    yapf --style google -i -r hockeyclock
+    yapf --style google -i -r hockeygameclock
 
     # Lint Python code
-    pylint --rcfile pylintrc hockeyclock
+    pylint --rcfile pylintrc hockeygameclock
 
     # Build the docs
     cd docs

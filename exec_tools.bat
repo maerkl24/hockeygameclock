@@ -2,19 +2,19 @@
 call .venv\Scripts\activate.bat
 
 :: Sort imports
-isort hockeyclock
+isort hockeygameclock
 isort tests
 
 :: Format Python code
-black hockeyclock
+black hockeygameclock
 black tests
 
 :: Lint Python code
-pylint hockeyclock
+pylint hockeygameclock
 pylint tests
 
 :: Type check Python code
-mypy hockeyclock
+mypy hockeygameclock
 mypy tests
 
 :: Execute Python tests and measure coverage

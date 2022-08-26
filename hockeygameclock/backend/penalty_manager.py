@@ -1,13 +1,13 @@
-"""Penalty Manager module.
+"""PenaltyManager module.
+
+This module defines the :class:`PenaltyManager` class.
 """
 
 from datetime import timedelta
-from typing import List, Literal
+from typing import List
 
-from hockeyclock.backend.player_penalty import PlayerPenalty
-
-# Values for team
-TeamType = Literal["home", "guest"]
+from hockeygameclock.backend.player_penalty import PlayerPenalty
+from hockeygameclock.backend.types import TeamType
 
 
 class PenaltyManager:
@@ -29,19 +29,14 @@ class PenaltyManager:
         Args:
             team: The to be penalized team.
             penalty: The penalty.
-
-        Raises:
-            ValueError: If `team` is invalid.
         """
         # select penalty lists for home or guest team
-        if team == "home":
+        if team == TeamType.HOME:
             penalties_pending = self.home_penalties_pending
             penalties_active = self.home_penalties_active
-        elif team == "guest":
+        elif team == TeamType.GUEST:
             penalties_pending = self.guest_penalties_pending
             penalties_active = self.guest_penalties_active
-        else:
-            raise ValueError(f'Invalid value "{team}" for team! Valid values are "home" or "guest".')
 
         # check if active penalties is less than maximum number of active penalties
         if len(penalties_active) < self.max_active_penalties:

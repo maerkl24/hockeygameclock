@@ -1,7 +1,7 @@
-"""Tests for Offense class.
+"""Tests for :class:`Offense` class.
 """
-from hockeyclock.backend.offense import Offense
-from hockeyclock.backend.penalty import PEN_2
+from hockeygameclock.backend.offense import Offense
+from hockeygameclock.backend.penalty import PEN_2
 
 
 def test_offense_constructor():

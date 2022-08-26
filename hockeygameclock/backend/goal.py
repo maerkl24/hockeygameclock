@@ -1,9 +1,11 @@
 """Goal module.
+
+This module defines the :class:`Goal` class.
 """
 from datetime import timedelta
 from typing import Optional
 
-from hockeyclock.backend.player import Player
+from hockeygameclock.backend.player import Player
 
 
 class Goal:
