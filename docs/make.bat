@@ -7,8 +7,12 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
+set SPHINXAPIDOC=sphinx-apidoc
+
 set SOURCEDIR=.
 set BUILDDIR=_build
+set CODEDIR=../hockeygameclock
+set APIBUILDDIR=_api
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
@@ -25,7 +29,9 @@ if errorlevel 9009 (
 
 if "%1" == "" goto help
 
-sphinx-apidoc -f -H API --tocfile index --private --separate -o _api ..\hockeygameclock
+@RD /S /Q %BUILDDIR%
+@RD /S /Q %APIBUILDDIR%
+%SPHINXAPIDOC% -f -H API --tocfile index --private --separate --module-first -o %APIBUILDDIR% %CODEDIR%
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 goto end
 
