@@ -14,10 +14,10 @@ class GoalManager:
 
     def __init__(self) -> None:
         """Constructor."""
-        self.home_goals: List[Goal]
-        self.guest_goals: List[Goal]
+        self.home_goals: List[Goal] = []
+        self.guest_goals: List[Goal] = []
 
-    def _add_goal(self, team: TeamType, goal: Goal) -> None:
+    def add_goal(self, team: TeamType, goal: Goal) -> None:
         """Add new goal.
 
         Args:
