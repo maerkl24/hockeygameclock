@@ -1,6 +1,6 @@
 """TimeManager module.
 
-This module defines the :class:`TimeManager` class.
+This module defines the `TimeManager` class.
 """
 from datetime import timedelta
 from time import perf_counter

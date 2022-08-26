@@ -1,6 +1,6 @@
 """Player module.
 
-This module defines the :class:`Player` class.
+This module defines the `Player` class.
 """
 from typing import Literal, Optional
 

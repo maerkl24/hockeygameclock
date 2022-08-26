@@ -1,4 +1,4 @@
-"""Tests for :class:`Player` class.
+"""Tests for `Player` class.
 """
 from hockeygameclock.backend.player import Player
 

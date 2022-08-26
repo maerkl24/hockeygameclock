@@ -1,6 +1,6 @@
 """Types module.
 
-This module defines all custom types of :module:`hockeygameclock`:
+This module defines all custom types of `hockeygameclock`:
 - `TeamType`
 """
 from enum import Enum, auto
@@ -11,11 +11,10 @@ class TeamType(Enum):
 
     Args:
         Enum: Inherits from Enum.
-
-    Attributes:
-        HOME: The home team.
-        GUEST: The guest team.
     """
 
+    #: The home team.
     HOME = auto()
+
+    #: The guest team.
     GUEST = auto()

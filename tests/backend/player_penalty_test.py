@@ -1,4 +1,4 @@
-"""Tests for :class:`PlayerPenalty` class.
+"""Tests for `PlayerPenalty` class.
 """
 from datetime import timedelta
 

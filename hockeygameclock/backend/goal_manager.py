@@ -1,6 +1,6 @@
 """GoalManager module.
 
-This module defines the :class:`GoalManger` class.
+This module defines the `GoalManger` class.
 """
 
 from typing import List

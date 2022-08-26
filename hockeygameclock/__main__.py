@@ -1,4 +1,4 @@
-"""Main module of :module:`hockeygameclock`.
+"""Main module of `hockeygameclock`.
 """
 
 print("Hello this is a nice hockeygameclock!")

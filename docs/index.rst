@@ -6,3 +6,4 @@ Welcome to hockeygameclock's documentation!
    :maxdepth: 1
 
    getting_started
+   _api/index

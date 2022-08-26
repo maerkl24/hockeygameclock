@@ -25,6 +25,7 @@ if errorlevel 9009 (
 
 if "%1" == "" goto help
 
+sphinx-apidoc -f -H API --tocfile index --private --separate -o _api ..\hockeygameclock
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 goto end
 

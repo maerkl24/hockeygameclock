@@ -1,4 +1,4 @@
-"""Tests for :class:`Goal` class.
+"""Tests for `Goal` class.
 """
 from datetime import timedelta
 

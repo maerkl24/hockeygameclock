@@ -1,6 +1,6 @@
 """PlayerPenalty module.
 
-This module defines the :class:`PlayerPenalty` class.
+This module defines the `PlayerPenalty` class.
 """
 from datetime import timedelta
 from typing import Optional

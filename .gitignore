@@ -1,16 +1,15 @@
-# Python artefacts
+# Python
+/.venv/
 __pycache__/
 *.egg-info/
 
-# Python virtual environment
-/.venv/
-
 # Pytest
 /.pytest_cache/
-.coverage
+/.coverage
 
 # MyPy
 /.mypy_cache
 
-# Sphinx build folder
+# Sphinx
 /docs/_build/
+/docs/_api/
