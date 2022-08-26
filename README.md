@@ -1,8 +1,8 @@
+<h1 align="center">Hockey Game Clock</h1>
+
+<p align="center">A nice hockey game clock for timekeepers.</p>
+
 ![Hockey Game Clock Banner](banner.png)
-
-# Hockey Game Clock
-
-A nice hockey game clock for timekeepers.
 
 ## Getting Started
 
