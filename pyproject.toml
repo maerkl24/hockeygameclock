@@ -18,12 +18,14 @@ repository = 'https://github.com/maerkl24/hockeygameclock'
 
 [project.optional-dependencies]
 dev = [
+    'isort==5.10.1',
+    'black==22.6.0',
+    'pylint==2.15.0',
+    'mypy==0.971',
+]
+test = [
     'pytest==7.1.2',
     'pytest-cov==3.0.0',
-    'pylint==2.15.0',
-    'black==22.6.0',
-    'mypy==0.971',
-    'isort==5.10.1',
 ]
 doc = [
     'Sphinx==5.1.1',
