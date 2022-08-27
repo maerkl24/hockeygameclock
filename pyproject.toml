@@ -11,21 +11,23 @@ maintainers     = [{name = 'Kilian Märkl'}, {name = 'Raphaela Märkl'}]
 license         = {file = "LICENSE"}
 readme          = "README.md"
 requires-python = '>=3.10.5'
-dependencies    = ['PySide6>=6.3.1']
+dependencies    = ['PySide6==6.3.1']
 
 [project.urls]
 repository = 'https://github.com/maerkl24/hockeygameclock'
 
 [project.optional-dependencies]
 dev = [
-    'Sphinx>=5.1.1',
-    'furo>=2022.6.21',
-    'pytest>=7.1.2',
-    'pylint>=2.14.5',
-    'black>=22.6.0',
-    'mypy>=0.971',
-    'isort>=5.10.1',
-    'pytest-cov>=3.0.0',
+    'pytest==7.1.2',
+    'pytest-cov==3.0.0',
+    'pylint==2.15.0',
+    'black==22.6.0',
+    'mypy==0.971',
+    'isort==5.10.1',
+]
+doc = [
+    'Sphinx==5.1.1',
+    'furo==2022.6.21',
 ]
 
 [tool.setuptools]
