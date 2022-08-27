@@ -13,11 +13,11 @@ help:
 .PHONY: help Makefile
 
 clean:
-    rm -rf "$(BUILDDIR)"
+	rm -rf "$(BUILDDIR)"
 	rm -rf "$(APIBUILDDIR)"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
-    @$(SPHINXAPIDOC) -f -H API --tocfile index --private --separate --module-first -o "$(APIBUILDDIR)" "$(CODEDIR)"
+	@$(SPHINXAPIDOC) -f -H API --tocfile index --private --separate --module-first -o "$(APIBUILDDIR)" "$(CODEDIR)"
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
