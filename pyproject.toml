@@ -30,6 +30,7 @@ test = [
 doc = [
     'Sphinx==5.1.1',
     'furo==2022.6.21',
+    'sphinxcontrib-plantuml==0.24',
 ]
 
 [tool.setuptools]

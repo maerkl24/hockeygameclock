@@ -1,0 +1,11 @@
+@startuml Components
+
+[UI]
+
+[TimeManager]
+
+[GoalManager]
+
+[PenaltyManager]
+
+@enduml

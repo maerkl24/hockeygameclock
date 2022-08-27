@@ -2,6 +2,10 @@
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
+import pathlib
+
+# Set repository base path
+repository_path = pathlib.Path(__file__).resolve().parent.parent
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -14,7 +18,10 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx.ext.napoleon"]
+extensions = [
+    "sphinx.ext.napoleon",
+    "sphinxcontrib.plantuml",
+]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -36,3 +43,6 @@ html_theme_options = {
     "source_branch": "main",
     "source_directory": "docs/",
 }
+
+# -- Options for plantuml ----------------------------------------------------
+plantuml = f"java -jar {repository_path}/tools/plantuml.jar"

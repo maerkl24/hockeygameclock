@@ -1,0 +1,66 @@
+@startuml Overview
+
+class Player {
+    - int number
+    - Optional[PositionType] position
+    - Optional[str] forename
+    - Optional[str] surname
+    - Optional[int] pass_number
+}
+
+class Penalty {
+    - str code
+    - str name 
+    - timedelta time
+}
+
+class Offense {
+    - str code
+    - str name 
+    - List[Penalty] possible_penalties
+}
+Offense "1" *-- "1..*" Penalty
+
+class PlayerPenalty {
+    - Player player
+    - Penalty penalty 
+    - Optional[Offense] offense
+    - timedelta start_time
+    - timedelta end_time
+    - timedelta remaining_time
+    + set_start_time(start_time)
+    + set_end_time(end_time)
+    + update_remaining_time(elapsed_time)
+    + is_over() -> bool
+}
+PlayerPenalty "1" *-- "1" Player
+PlayerPenalty "1" *-- "1" Penalty
+PlayerPenalty "1" o-- "1" Offense
+
+class PenatlyManager {
+    - List[PlayerPenalty] home_penalties_pending
+    - List[PlayerPenalty] home_penalties_active
+    - List[PlayerPenalty] home_penalties_expired
+    - List[PlayerPenalty] guest_penalties_pending
+    - List[PlayerPenalty] guest_penalties_active
+    - List[PlayerPenalty] guest_penalties_expired
+    + add_penalty(team, penalty)
+    + update_time(elapsed_time)
+}
+PenatlyManager "1" o-- "0..*" PlayerPenalty
+
+class Goal {
+    - timedelta time
+    - Player scorer
+    - Optional[Player] assist
+}
+Goal "1" *-- "1..2" Player
+
+class GoalManager {
+    - List[Goal] home_goals
+    - List[Goal] guest_goals
+    + add_goal(team, goal)
+}
+GoalManager "1" o-- "0..*" Goal
+
+@enduml
