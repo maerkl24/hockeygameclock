@@ -2,6 +2,7 @@ name: Analysis
 on:
   push:
     paths:
+      - '.github/workflows/analysis.yml'
       - 'hockeyclock/**'
       - 'tests/**'
 jobs:
