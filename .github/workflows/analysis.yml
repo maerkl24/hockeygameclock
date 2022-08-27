@@ -1,5 +1,9 @@
 name: Analysis
-on: [push]
+on:
+  push:
+    paths:
+      - 'hockeyclock/**'
+      - 'tests/**'
 jobs:
   import:
     name: Import analysis
