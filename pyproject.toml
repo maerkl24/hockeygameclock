@@ -42,7 +42,7 @@ line-length = 120
 
 [tool.pylint.main]
 load-plugins = ['pylint.extensions.docparams']
-#ignored-modules =['PySide6']
+ignored-modules =['PySide6']
 extension-pkg-whitelist = ['PySide6']
 [tool.pylint.format]
 max-line-length = 120
