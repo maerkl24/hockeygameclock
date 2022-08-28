@@ -42,6 +42,7 @@ html_theme_options = {
     "source_repository": "https://github.com/maerkl24/hockeygameclock/",
     "source_branch": "main",
     "source_directory": "docs/",
+    "sidebar_hide_name": True,
 }
 
 # -- Options for plantuml ----------------------------------------------------

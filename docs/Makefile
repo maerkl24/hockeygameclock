@@ -4,7 +4,7 @@ SPHINXAPIDOC  ?= sphinx-apidoc
 SOURCEDIR     = .
 BUILDDIR      = _build
 CODEDIR       = ../hockeygameclock
-APIBUILDDIR   = _api
+APIBUILDDIR   = developer/_api
 
 # Put it first so that "make" without argument is like "make help".
 help:

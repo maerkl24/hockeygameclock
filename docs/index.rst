@@ -7,4 +7,3 @@ Welcome to hockeygameclock's documentation!
 
    user/index
    developer/index
-   _api/index

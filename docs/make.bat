@@ -12,7 +12,7 @@ set SPHINXAPIDOC=sphinx-apidoc
 set SOURCEDIR=.
 set BUILDDIR=_build
 set CODEDIR=../hockeygameclock
-set APIBUILDDIR=_api
+set APIBUILDDIR=developer/_api
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
