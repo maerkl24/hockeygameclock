@@ -81,7 +81,7 @@ class TimeManager:
         """_summary_
 
         Args:
-            elapsed_time (timedelta): _description_
+            elapsed_time: _description_
         """
 
     def period_is_over(self) -> bool:
