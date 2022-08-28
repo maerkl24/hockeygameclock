@@ -40,12 +40,19 @@ packages = ['hockeygameclock']
 line-length = 120
 #include = '(hockeygameclock|tests)\/.*(\.pyi?|\.ipynb)$'
 
-[tool.pylint]
-max-line-length = 120
-extension-pkg-whitelist = ['PySide6']
-disable = ['too-many-arguments', 'too-few-public-methods', 'too-many-instance-attributes', 'fixme']
+[tool.pylint.main]
 load-plugins = ['pylint.extensions.docparams']
+#ignored-modules =['PySide6']
+extension-pkg-whitelist = ['PySide6']
+[tool.pylint.format]
+max-line-length = 120
+[tool.pylint."messages control"]
+disable = ['too-many-arguments', 'too-few-public-methods', 'too-many-instance-attributes', 'fixme']
+#[tool.pylint.typecheck]
+#ignored-classes = ['PySide6']
+[tool.pylint.parameter_documentation]
 default-docstring-type = 'google'
+
 
 [tool.mypy]
 warn_return_any = true
