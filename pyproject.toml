@@ -2,6 +2,7 @@
 requires = ['setuptools', 'wheel']
 build-backend = 'setuptools.build_meta'
 
+
 [project]
 name            = 'hockeygameclock'
 version         = '1.0.0'
@@ -33,21 +34,27 @@ doc = [
     'sphinxcontrib-plantuml==0.24',
 ]
 
+
 [tool.setuptools]
 packages = ['hockeygameclock']
+
 
 [tool.black]
 line-length = 120
 #include = '(hockeygameclock|tests)\/.*(\.pyi?|\.ipynb)$'
 
+
 [tool.pylint.main]
 load-plugins = ['pylint.extensions.docparams']
-ignored-modules =['PySide6']
+ignored-modules = ['PySide6']  # Neened for PySide6 on Linux (GitHub CI)
 extension-pkg-whitelist = ['PySide6']
+
 [tool.pylint.format]
 max-line-length = 120
+
 [tool.pylint."messages control"]
 disable = ['too-many-arguments', 'too-few-public-methods', 'too-many-instance-attributes', 'fixme']
+
 [tool.pylint.parameter_documentation]
 default-docstring-type = 'google'
 
@@ -55,9 +62,11 @@ default-docstring-type = 'google'
 [tool.mypy]
 warn_return_any = true
 
+
 [tool.isort]
 profile = "black"
 line_length = 120
+
 
 [tool.pytest.ini_options]
 addopts = "--cov=hockeygameclock"
