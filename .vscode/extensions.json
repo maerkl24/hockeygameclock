@@ -9,6 +9,7 @@
         "jebbs.plantuml",
         "njpwerner.autodocstring",
         "lextudio.restructuredtext",
-        "trond-snekvik.simple-rst"
+        "trond-snekvik.simple-rst",
+        "Gruntfuggly.todo-tree"
     ]
 }
