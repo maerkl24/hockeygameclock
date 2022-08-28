@@ -1,6 +1,6 @@
 """Goal module.
 
-This module defines the `Goal` class.
+This module defines the ``Goal`` class.
 """
 from datetime import timedelta
 from typing import Optional

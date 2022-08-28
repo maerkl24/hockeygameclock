@@ -15,6 +15,7 @@ copyright = "2022, Kilian Märkl"
 author = "Kilian Märkl"
 release = "1.0.0"
 
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -33,9 +34,11 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "furo"
 html_static_path = ["_static"]
 
+
 # -- Options for furo theme --------------------------------------------------
 # https://pradyunsg.me/furo/customisation/logo/
 # https://pradyunsg.me/furo/customisation/edit-button/
+
 html_theme_options = {
     "light_logo": "logo.png",
     "dark_logo": "logo.png",
@@ -45,5 +48,18 @@ html_theme_options = {
     "sidebar_hide_name": True,
 }
 
-# -- Options for plantuml ----------------------------------------------------
+
+# -- Options for sphinx.ext.napoleon -----------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+
+napoleon_google_docstring = True
+napoleon_numpy_docstring = False
+napoleon_include_init_with_doc = True
+napoleon_include_private_with_doc = True
+napoleon_include_special_with_doc = True
+
+
+# -- Options for sphinxcontrib.plantuml --------------------------------------
+# https://github.com/sphinx-contrib/plantuml/
+
 plantuml = f"java -jar {repository_path}/tools/plantuml.jar"

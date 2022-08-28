@@ -1,4 +1,4 @@
-"""Tests for `Penalty` class.
+"""Tests for ``Penalty`` class.
 """
 from datetime import timedelta
 

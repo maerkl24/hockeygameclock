@@ -1,4 +1,4 @@
-"""Tests for `Offense` class.
+"""Tests for ``Offense`` class.
 """
 from hockeygameclock.backend.offense import Offense
 from hockeygameclock.backend.penalty import PEN_2

@@ -1,6 +1,6 @@
 """Offense module.
 
-This module defines the `Offense` class and instantiates all allowed offenses.
+This module defines the ``Offense`` class and instantiates all allowed offenses.
 """
 
 from typing import List

@@ -42,6 +42,7 @@ line-length = 120
 
 [tool.pylint]
 max-line-length = 120
+extension-pkg-whitelist = ['PySide6']
 disable = ['too-many-arguments', 'too-few-public-methods', 'too-many-instance-attributes', 'fixme']
 load-plugins = ['pylint.extensions.docparams']
 default-docstring-type = 'google'

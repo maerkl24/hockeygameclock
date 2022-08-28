@@ -31,5 +31,5 @@ exec_tools.bat
 - [ ] Backend
 - [ ] Tests
 - [ ] Packaging/Executable
-- [ ] User Inferface
+- [ ] User Interface
 - [ ] ...

@@ -1,6 +1,6 @@
 """PenaltyManager module.
 
-This module defines the `PenaltyManager` class.
+This module defines the ``PenaltyManager`` class.
 """
 
 from datetime import timedelta

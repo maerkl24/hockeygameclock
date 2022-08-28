@@ -1,4 +1,4 @@
-"""Tests for `GoalManager` class.
+"""Tests for ``GoalManager`` class.
 """
 from datetime import timedelta
 

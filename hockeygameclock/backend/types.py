@@ -1,7 +1,6 @@
 """Types module.
 
-This module defines all custom types of `hockeygameclock`:
-- `TeamType`
+This module defines all custom types of ``hockeygameclock``.
 """
 from enum import Enum, auto
 

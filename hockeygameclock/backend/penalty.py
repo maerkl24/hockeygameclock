@@ -1,6 +1,6 @@
 """Penalty module.
 
-This module defines the `Penalty` class and instantiates all allowed penalties.
+This module defines the ``Penalty`` class and instantiates all allowed penalties.
 """
 
 from datetime import timedelta
