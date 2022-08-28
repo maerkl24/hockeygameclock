@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/documentation.yml'
       - 'docs/**'
+      - 'hockeyclock/**'
 jobs:
   build:
     name: Build
