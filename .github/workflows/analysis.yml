@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/analysis.yml'
-      - 'hockeyclock/**'
+      - 'hockeygameclock/**'
       - 'tests/**'
 jobs:
   import:

@@ -1,2 +1,2 @@
-"""hockeyclock module.
+"""hockeygameclock module.
 """
