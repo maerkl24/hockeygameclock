@@ -46,7 +46,10 @@ line-length = 120
 
 [tool.pylint.main]
 load-plugins = ['pylint.extensions.docparams']
-ignored-modules = ['PySide6']  # Neened for PySide6 on Linux (GitHub CI)
+ignored-modules = [
+    'PySide6',  # Neened for PySide6 on Linux (GitHub CI)
+    'hockeygameclock.frontend.ui',  # Ignore Qt user interface Python files (these are generated files)
+]
 extension-pkg-whitelist = ['PySide6']
 
 [tool.pylint.format]
@@ -61,6 +64,10 @@ default-docstring-type = 'google'
 
 [tool.mypy]
 warn_return_any = true
+
+[[tool.mypy.overrides]]
+module = 'hockeygameclock.frontend.ui.*'
+ignore_missing_imports = true
 
 
 [tool.isort]

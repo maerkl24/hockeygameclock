@@ -13,3 +13,7 @@ __pycache__/
 # Sphinx
 /docs/_build/
 /docs/developer/_api/
+
+# Generated Qt user interface Python files
+/hockeygameclock/frontend/ui/*.py
+!/hockeygameclock/frontend/ui/__init__.py

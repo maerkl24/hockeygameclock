@@ -2,7 +2,9 @@
 """
 import sys
 
-from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtWidgets import QApplication
+
+from hockeygameclock.frontend.main_window import MainWindow
 
 
 def main():
@@ -11,7 +13,7 @@ def main():
     app = QApplication(sys.argv)
 
     # Create and show main window
-    window = QWidget()
+    window = MainWindow()
     window.show()
 
     # Execute application

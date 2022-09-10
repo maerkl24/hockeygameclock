@@ -20,6 +20,7 @@ release = "1.0.0"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinxcontrib.plantuml",
 ]
@@ -47,6 +48,12 @@ html_theme_options = {
     "source_directory": "docs/",
     "sidebar_hide_name": True,
 }
+
+
+# -- Options for sphinx.ext.autodoc ------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+
+autodoc_mock_imports = ["hockeygameclock.frontend.ui"]
 
 
 # -- Options for sphinx.ext.napoleon -----------------------------------------
