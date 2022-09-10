@@ -3,6 +3,7 @@
 [![Analysis Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/analysis.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/analysis.yml)
 [![Test](https://github.com/maerkl24/hockeygameclock/actions/workflows/test.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/test.yml)
 [![Documentation Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/documentation.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/documentation.yml)
+[![Generation Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/generation.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/generation.yml)
 
 # Hockey Game Clock
 
