@@ -33,40 +33,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">QPushButton {
-    border: none;
-    border-radius: 10px;
-    color: rgb(225, 225, 225);
-	background-color: rgb(60, 60, 60);
-}
-
-QTimeEdit {
-    border: none;
-    border-radius: 10px;
-	color: rgb(225, 225, 225);
-	background-color: rgb(60, 60, 60);
-}
-
-QSpinBox {
-    border: none;
-    border-radius: 10px;
-	color: rgb(225, 225, 225);
-	background-color: rgb(60, 60, 60);
-}
-
-QLineEdit {
-    border: none;
-    border-radius: 10px;
-	color: rgb(225, 225, 225);
-	background-color: rgb(60, 60, 60);
-}
-
-QTableWidget {
-    border: none;
-    border-radius: 10px;
-    color: rgb(225, 225, 225);
-	background-color: rgb(60, 60, 60);
-}</string>
+    <string notr="true"/>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
@@ -168,7 +135,12 @@ QTableWidget {
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">QPushButton:hover {
+             <string notr="true">QPushButton {
+    border: none;
+    border-radius: 10px;
+    color: rgb(225, 225, 225);
+}
+QPushButton:hover {
 	background-color: rgb(75, 75, 75);
 }</string>
             </property>
@@ -220,7 +192,12 @@ QTableWidget {
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">QPushButton:hover {
+             <string notr="true">QPushButton {
+    border: none;
+    border-radius: 10px;
+    color: rgb(225, 225, 225);
+}
+QPushButton:hover {
 	background-color: rgb(75, 75, 75);
 }</string>
             </property>
@@ -311,7 +288,12 @@ QTableWidget {
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(60, 60, 60);</string>
+               <string notr="true">QLineEdit {
+    border: none;
+    border-radius: 10px;
+	color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -342,7 +324,12 @@ QTableWidget {
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(60, 60, 60);</string>
+               <string notr="true">QLineEdit {
+    border: none;
+    border-radius: 10px;
+	color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -423,7 +410,12 @@ QTableWidget {
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(60, 60, 60);</string>
+                 <string notr="true">QSpinBox {
+    border: none;
+    border-radius: 10px;
+	color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -700,7 +692,12 @@ QPushButton:hover {
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(60, 60, 60);</string>
+                 <string notr="true">QTimeEdit {
+    border: none;
+    border-radius: 10px;
+	color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}</string>
                 </property>
                 <property name="wrapping">
                  <bool>false</bool>
@@ -888,7 +885,12 @@ QPushButton:hover {
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(60, 60, 60);</string>
+                 <string notr="true">QSpinBox {
+    border: none;
+    border-radius: 10px;
+	color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1187,7 +1189,12 @@ QPushButton:hover {
               <item>
                <widget class="QTableWidget" name="home_penalties">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(60, 60, 60);
+                 <string notr="true">QTableWidget {
+    border: none;
+    border-radius: 20px;
+    color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}
 </string>
                 </property>
                 <column>
@@ -1245,7 +1252,12 @@ QPushButton:hover {
               <item>
                <widget class="QTableWidget" name="guest_penalties">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(60, 60, 60);</string>
+                 <string notr="true">QTableWidget {
+    border: none;
+    border-radius: 20px;
+    color: rgb(225, 225, 225);
+	background-color: rgb(60, 60, 60);
+}</string>
                 </property>
                 <column>
                  <property name="text">
