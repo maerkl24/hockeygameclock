@@ -29,8 +29,14 @@ exec_tools.bat
 
 ## TODOs
 
+- [ ] Frontend
+  - [ ] Use StackedWidget in MainWindow to change between pages
+    - [ ] Finalize UI Clock page
+    - [ ] Finalize UI Settings page
+  - [ ] Implement page selection (create and connect button functions)
+  - [ ] Implement frontend backend connections
 - [ ] Backend
-- [ ] Tests
+  - [ ] Implement ``Settings`` class
+  - [ ] Finalize concept for Timer (using current approach or QTimer)
+  - [ ] Write tests (100% coverage)
 - [ ] Packaging/Executable
-- [ ] User Interface
-- [ ] ...
