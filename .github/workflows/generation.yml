@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/generation.yml'
-      - 'qt_ui/**'
+      - 'ui/**'
 jobs:
   test:
     name: Qt UI Python generation
@@ -23,5 +23,5 @@ jobs:
         run: python -m pip install -e .
       - name: Run pyside6-uic and pyside6-rcc
         run: |
-          pyside6-uic qt_ui/main_window.ui -o hockeygameclock/frontend/ui/main_window.py --from-imports
-          pyside6-rcc qt_ui/resources.qrc -o hockeygameclock/frontend/ui/resources_rc.py
+          pyside6-uic ui/main_window.ui -o hockeygameclock/frontend/ui/main_window.py --from-imports
+          pyside6-rcc ui/resources.qrc -o hockeygameclock/frontend/ui/resources_rc.py

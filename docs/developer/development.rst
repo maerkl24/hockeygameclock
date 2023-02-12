@@ -29,10 +29,10 @@ combination with Python, we have to convert them to Python code. This can be don
     .venv\Scripts\activate.bat
 
     :: Convert user interface files to Python
-    pyside6-uic -o hockeygameclock/frontend/main_window.py hockeygameclock/frontend/main_window.ui
+    pyside6-uic ui/main_window.ui -o hockeygameclock/frontend/ui/main_window.py --from-imports
 
     :: Convert resource file to Python
-    pyside6-rcc -o hockeygameclock/frontend/resources.py hockeygameclock/frontend/resources.qrc
+    pyside6-rcc ui/resources.qrc -o hockeygameclock/frontend/ui/resources_rc.py
 
 Backend
 -------
