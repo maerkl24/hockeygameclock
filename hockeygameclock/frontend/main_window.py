@@ -20,7 +20,6 @@ class MainWindow(QMainWindow):
     def __init__(self) -> None:
         """Constructor."""
         super().__init__()
-        self.setWindowFlag(Qt.FramelessWindowHint)
         self.old_pos = QPoint()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -28,11 +27,6 @@ class MainWindow(QMainWindow):
 
     def connect_ui_events(self) -> None:
         """Connect the events functions for the UI elements."""
-        # Minimize, maximize and close button
-        self.ui.minimize.clicked.connect(self.showMinimized)
-        self.ui.maximize.clicked.connect(self.showMaximized)
-        self.ui.close.clicked.connect(self.close)
-
         # Page selection buttons
         self.ui.clock_page_button.clicked.connect(self.set_clock_page)
         self.ui.settings_page_button.clicked.connect(self.set_settings_page)

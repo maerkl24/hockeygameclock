@@ -1,4 +1,4 @@
-![Hockey Game Clock Banner](banner.png)
+![Hockey Game Clock Banner](assets/banner.png)
 
 [![Analysis Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/analysis.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/analysis.yml)
 [![Test](https://github.com/maerkl24/hockeygameclock/actions/workflows/test.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/test.yml)

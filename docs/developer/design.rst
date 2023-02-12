@@ -6,9 +6,9 @@ This is the ``hockeygameclock`` design.
 Components
 ----------
 
-.. uml:: plantuml/components.puml
+.. uml:: diagrams/components.puml
 
 Class diagram
 -------------
 
-.. uml:: plantuml/overview.puml
+.. uml:: diagrams/overview.puml

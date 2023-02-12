@@ -11,7 +11,7 @@ repository_path = pathlib.Path(__file__).resolve().parent.parent
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "hockeygameclock"
-copyright = "2022, Kilian Märkl"
+copyright = "2023, Kilian Märkl"
 author = "Kilian Märkl"
 release = "1.0.0"
 
@@ -20,8 +20,6 @@ release = "1.0.0"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.autodoc",
-    "sphinx.ext.napoleon",
     "sphinxcontrib.plantuml",
 ]
 
@@ -45,25 +43,9 @@ html_theme_options = {
     "dark_logo": "logo.png",
     "source_repository": "https://github.com/maerkl24/hockeygameclock/",
     "source_branch": "main",
-    "source_directory": "docs/",
+    "source_directory": "doc/",
     "sidebar_hide_name": True,
 }
-
-
-# -- Options for sphinx.ext.autodoc ------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
-
-autodoc_mock_imports = ["hockeygameclock.frontend.ui"]
-
-
-# -- Options for sphinx.ext.napoleon -----------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
-
-napoleon_google_docstring = True
-napoleon_numpy_docstring = False
-napoleon_include_init_with_doc = True
-napoleon_include_private_with_doc = True
-napoleon_include_special_with_doc = True
 
 
 # -- Options for sphinxcontrib.plantuml --------------------------------------

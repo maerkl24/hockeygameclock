@@ -10,6 +10,7 @@
         "njpwerner.autodocstring",
         "lextudio.restructuredtext",
         "trond-snekvik.simple-rst",
-        "Gruntfuggly.todo-tree"
+        "gruntfuggly.todo-tree",
+        "donjayamanne.githistory"
     ]
 }

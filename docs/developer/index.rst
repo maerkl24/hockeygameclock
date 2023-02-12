@@ -13,5 +13,5 @@ like the design documentation, how to setup the environment, and develop fronten
 
     getting_started
     development
-    design/index
-    _api/index
+    requirements
+    design

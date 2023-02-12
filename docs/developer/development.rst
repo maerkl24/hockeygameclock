@@ -12,7 +12,7 @@ binding.
 The GUI is developed and designed with help of the `Qt Designer <https://doc.qt.io/qt-6/qtdesigner-manual.html>`_. You
 can open the Qt Designer with the following commands:
 
-.. code-block:: bat
+.. code-block:: batch
 
     :: Activate virtual environment
     .venv\Scripts\activate.bat
@@ -23,7 +23,7 @@ can open the Qt Designer with the following commands:
 The Qt Designer works with ``.ui`` files to describe the developed GUI. However, to uses these information in
 combination with Python, we have to convert them to Python code. This can be done with the following commands:
 
-.. code-block:: bat
+.. code-block:: batch
 
     :: Activate virtual environment
     .venv\Scripts\activate.bat
