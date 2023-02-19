@@ -1,3 +1,6 @@
+:: Move to project root
+pushd %~dp0..
+
 :: Activate virtual environment
 call .venv\Scripts\activate.bat
 
@@ -9,3 +12,6 @@ pyside6-rcc ui/resources.qrc -o hockeygameclock/frontend/ui/resources_rc.py
 
 :: Deactivate virtual environment
 call deactivate
+
+:: Move back
+popd

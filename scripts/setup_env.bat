@@ -1,3 +1,6 @@
+:: Move to project root
+pushd %~dp0..
+
 :: Install Python virtual environment
 python -m venv .venv
 
@@ -14,3 +17,6 @@ python -m pip install -e .[dev,test,doc]
 
 :: Deactivate virtual environment
 call deactivate
+
+:: Move back
+popd

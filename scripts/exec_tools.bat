@@ -1,3 +1,6 @@
+:: Move to project root
+pushd %~dp0..
+
 :: Activate virtual environment
 call .venv\Scripts\activate.bat
 
@@ -27,3 +30,6 @@ cd ..
 
 :: Deactivate virtual environment
 call deactivate
+
+:: Move back
+popd

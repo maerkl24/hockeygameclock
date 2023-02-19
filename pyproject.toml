@@ -9,8 +9,8 @@ version         = '1.0.0'
 description     = 'Nice hockey game clock for timekeepers.'
 authors         = [{name = 'Kilian Märkl'}]
 maintainers     = [{name = 'Kilian Märkl'}]
-license         = {file = "LICENSE"}
-readme          = "README.md"
+license         = {file = 'LICENSE'}
+readme          = 'README.md'
 requires-python = '>=3.10.5'
 dependencies    = ['PySide6==6.4.2']
 
@@ -41,11 +41,12 @@ packages = ['hockeygameclock']
 
 [tool.black]
 line-length = 120
-#include = '(hockeygameclock|tests)\/.*(\.pyi?|\.ipynb)$'
+#include = '^(hockeygameclock|tests)\/.*(\.pyi?|\.ipynb)$'
 
 
 [tool.pylint.main]
 load-plugins = ['pylint.extensions.docparams']
+#ignore-paths = ['^(?!tests|hockeygameclock)\/.*']
 ignored-modules = [
     'PySide6',  # Neened for PySide6 on Linux (GitHub CI)
     'hockeygameclock.frontend.ui',  # Ignore Qt user interface Python files (these are generated files)
@@ -55,7 +56,7 @@ extension-pkg-whitelist = ['PySide6']
 [tool.pylint.format]
 max-line-length = 120
 
-[tool.pylint."messages control"]
+[tool.pylint.'messages control']
 disable = ['too-many-arguments', 'too-few-public-methods', 'too-many-instance-attributes', 'fixme']
 
 [tool.pylint.parameter_documentation]
@@ -71,10 +72,11 @@ ignore_missing_imports = true
 
 
 [tool.isort]
-profile = "black"
+profile = 'black'
 line_length = 120
+#src_paths = ['hockeygameclock', 'tests']
 
 
 [tool.pytest.ini_options]
-addopts = "--cov=hockeygameclock"
+addopts = '--cov=hockeygameclock'
 testpaths = ['tests']

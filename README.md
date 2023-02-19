@@ -17,14 +17,28 @@ To setup the development environment execute the
 
 ```bat
 :: Setup environment
-setup_env.bat
+scripts\setup_env.bat
 ```
 
 ### Execute Tools
 
 ```bat
 :: Execute tools
-exec_tools.bat
+scripts\exec_tools.bat
+```
+
+### Generate Python UI
+
+```bat
+:: Generate Python UI
+scripts\gen_python_ui.bat
+```
+
+### Run the Hockey Game Clock with Python
+
+```bat
+:: Run the Hockey Game Clock
+python hockeygameclock
 ```
 
 ## TODOs

@@ -17,6 +17,7 @@ Setup development environment
 
     :: Clone repository
     git clone https://github.com/maerkl24/hockeygameclock.git
+    cd hockeygameclock
 
     :: Set development environment
-    setup_env.bat
+    scripts\setup_env.bat
