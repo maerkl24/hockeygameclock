@@ -1,4 +1,4 @@
-name: Linting
+name: Linting 💡
 on:
   workflow_dispatch:
   push:

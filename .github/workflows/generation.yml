@@ -1,4 +1,4 @@
-name: UI generation
+name: UI generation ⚙️
 on:
   workflow_dispatch:
   push:

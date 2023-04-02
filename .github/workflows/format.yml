@@ -1,4 +1,4 @@
-name: Format
+name: Format 📝
 on:
   workflow_dispatch:
   push:
