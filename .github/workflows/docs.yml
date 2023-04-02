@@ -27,12 +27,7 @@ jobs:
           cd docs
           pdm run make html
           cd ..
-      #- name: Upload HTML artifacts
-      #  uses: actions/upload-artifact@v3
-      #  with:
-      #    name: docs
-      #    path: docs/_build/html
-      - name: Upload HTML artifacts
+      - name: Create and upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: docs/_build/html

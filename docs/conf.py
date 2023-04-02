@@ -3,17 +3,19 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 import pathlib
+import hockeygameclock
 
 # Set repository base path
-repository_path = pathlib.Path(__file__).resolve().parent.parent
+REPOSITORY_PATH = pathlib.Path(__file__).resolve().parent.parent
+
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "hockeygameclock"
+project = "Hockey Game Clock"
 copyright = "2023, Kilian Märkl"
 author = "Kilian Märkl"
-release = "1.0.0"
+release = hockeygameclock.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -32,6 +34,9 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 html_theme = "furo"
 html_static_path = ["_static"]
+html_css_files = ["css/custom.css"]
+html_favicon = "_static/favicon.ico"
+html_title = f"{project} {release}"
 
 
 # -- Options for furo theme --------------------------------------------------
@@ -43,12 +48,12 @@ html_theme_options = {
     "dark_logo": "logo.png",
     "source_repository": "https://github.com/maerkl24/hockeygameclock/",
     "source_branch": "main",
-    "source_directory": "doc/",
-    "sidebar_hide_name": True,
+    "source_directory": "docs/",
+    "sidebar_hide_name": False,
 }
 
 
 # -- Options for sphinxcontrib.plantuml --------------------------------------
 # https://github.com/sphinx-contrib/plantuml/
 
-plantuml = f"java -jar {repository_path}/tools/plantuml.jar"
+plantuml = f"java -jar {REPOSITORY_PATH.as_posix()}/tools/plantuml.jar"

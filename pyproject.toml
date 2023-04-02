@@ -33,6 +33,7 @@ dependencies    = [
 
 [project.urls]
 repository = "https://github.com/maerkl24/hockeygameclock"
+documentation = "https://maerkl24.github.io/hockeygameclock/"
 
 
 # PDM
