@@ -1,43 +1,18 @@
 ![Hockey Game Clock Banner](assets/banner.png)
 
-[![Analysis Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/analysis.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/analysis.yml)
-[![Test](https://github.com/maerkl24/hockeygameclock/actions/workflows/test.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/test.yml)
-[![Documentation Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/documentation.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/documentation.yml)
-[![Generation Status](https://github.com/maerkl24/hockeygameclock/actions/workflows/generation.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/generation.yml)
+[![Format](https://github.com/maerkl24/hockeygameclock/actions/workflows/format.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/format.yml)
+[![Linting](https://github.com/maerkl24/hockeygameclock/actions/workflows/linting.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/linting.yml)
+[![Tests](https://github.com/maerkl24/hockeygameclock/actions/workflows/tests.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/tests.yml)
+[![Docs](https://github.com/maerkl24/hockeygameclock/actions/workflows/docs.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/docs.yml)
+[![UI Generation](https://github.com/maerkl24/hockeygameclock/actions/workflows/generation.yml/badge.svg)](https://github.com/maerkl24/hockeygameclock/actions/workflows/generation.yml)
 
 # Hockey Game Clock
 
 A nice hockey game clock for timekeepers.
 
-## Getting Started
+## Run the Hockey Game Clock with Python
 
-### Setup Environment
-
-To setup the development environment execute the
-
-```bat
-:: Setup environment
-scripts\setup_env.bat
-```
-
-### Execute Tools
-
-```bat
-:: Execute tools
-scripts\exec_tools.bat
-```
-
-### Generate Python UI
-
-```bat
-:: Generate Python UI
-scripts\gen_python_ui.bat
-```
-
-### Run the Hockey Game Clock with Python
-
-```bat
-:: Run the Hockey Game Clock
+```shell
 python hockeygameclock
 ```
 

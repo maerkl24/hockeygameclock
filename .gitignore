@@ -3,16 +3,18 @@
 __pycache__/
 *.egg-info/
 
-# Pytest
-/.pytest_cache/
-/.coverage
+# PDM
+.pdm.toml
 
 # MyPy
 /.mypy_cache
 
+# Pytest
+/.pytest_cache/
+/.coverage
+
 # Sphinx
 /docs/_build/
-/docs/developer/_api/
 
 # Generated Qt user interface Python files
 /hockeygameclock/frontend/ui/*.py

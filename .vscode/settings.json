@@ -2,18 +2,15 @@
     "editor.rulers": [
         120
     ],
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
-    "python.envFile": "${workspaceFolder}/.venv",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.mypyEnabled": true,
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "black",
-    "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
     "cSpell.words": [
         "hockeygameclock"
     ],

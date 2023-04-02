@@ -2,15 +2,17 @@
     "recommendations": [
         "ms-python.python",
         "ms-python.vscode-pylance",
-        "eamodio.gitlens",
-        "streetsidesoftware.code-spell-checker",
-        "davidanson.vscode-markdownlint",
-        "bungcip.better-toml",
-        "jebbs.plantuml",
+        "ms-python.isort",
+        "ms-python.pylint",
         "njpwerner.autodocstring",
+        "bungcip.better-toml",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "davidanson.vscode-markdownlint",
         "lextudio.restructuredtext",
         "trond-snekvik.simple-rst",
+        "jebbs.plantuml",
+        "streetsidesoftware.code-spell-checker",
         "gruntfuggly.todo-tree",
-        "donjayamanne.githistory"
     ]
 }

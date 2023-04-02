@@ -1,82 +1,99 @@
+# Build system
 [build-system]
-requires = ['setuptools', 'wheel']
-build-backend = 'setuptools.build_meta'
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
 
 
+# Project
 [project]
-name            = 'hockeygameclock'
-version         = '1.0.0'
-description     = 'Nice hockey game clock for timekeepers.'
-authors         = [{name = 'Kilian Märkl'}]
-maintainers     = [{name = 'Kilian Märkl'}]
-license         = {file = 'LICENSE'}
-readme          = 'README.md'
-requires-python = '>=3.10.5'
-dependencies    = ['PySide6==6.4.2']
+name            = "hockeygameclock"
+version         = "1.0.0"
+description     = "Nice hockey game clock for timekeepers."
+keywords        = ["Python", "Python3", "PySide6", "Qt", "GUI", "Desktop-Application"]
+classifiers     = [
+    "Environment :: X11 Applications :: Qt",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Desktop Environment",
+    "Typing :: Typed",
+]
+authors         = [
+    {name = "Kilian Märkl", email = "kilianmaerkl@web.de"},
+]
+readme          = "README.md"
+license         = {file = "LICENSE"}
+requires-python = ">=3.10.5,<3.11"
+dependencies    = [
+    "PySide6==6.4.2",
+    "PySide6-DAW @ git+https://github.com/maerkl24/PySide6-DAW.git@v1.0.0",
+]
 
 [project.urls]
-repository = 'https://github.com/maerkl24/hockeygameclock'
+repository = "https://github.com/maerkl24/hockeygameclock"
 
-[project.optional-dependencies]
-dev = [
-    'isort==5.12.0',
-    'black==23.1.0',
-    'pylint==2.16.1',
-    'mypy==1.0.0',
+
+# PDM
+[tool.pdm.dev-dependencies]
+format = [
+    "isort>=5.12.0",
+    "black>=23.1.0",
+]
+lint = [
+    "pylint>=2.17.0",
+    "mypy>=1.1.1",
 ]
 test = [
-    'pytest==7.2.1',
-    'pytest-cov==4.0.0',
+    "pytest==7.2.2",
+    "pytest-cov==4.0.0",
 ]
 doc = [
-    'Sphinx==6.1.3',
-    'furo==2022.12.7',
-    'sphinxcontrib-plantuml==0.24.1',
+    "Sphinx==6.1.3",
+    "furo==2023.3.27",
+    "sphinxcontrib-plantuml==0.25",
 ]
 
 
-[tool.setuptools]
-packages = ['hockeygameclock']
+# Isort
+[tool.isort]
+profile = "black"
+line_length = 120
 
 
+# Black
 [tool.black]
 line-length = 120
-#include = '^(hockeygameclock|tests)\/.*(\.pyi?|\.ipynb)$'
 
 
+# Pylint
 [tool.pylint.main]
-load-plugins = ['pylint.extensions.docparams']
-#ignore-paths = ['^(?!tests|hockeygameclock)\/.*']
+load-plugins = ["pylint.extensions.docparams"]
 ignored-modules = [
-    'PySide6',  # Neened for PySide6 on Linux (GitHub CI)
-    'hockeygameclock.frontend.ui',  # Ignore Qt user interface Python files (these are generated files)
+    "PySide6",
+    "hockeygameclock.frontend.ui",  # Ignore Qt user interface Python files (these are generated files)
 ]
-extension-pkg-whitelist = ['PySide6']
+extension-pkg-whitelist = ["PySide6"]
 
 [tool.pylint.format]
 max-line-length = 120
 
-[tool.pylint.'messages control']
-disable = ['too-many-arguments', 'too-few-public-methods', 'too-many-instance-attributes', 'fixme']
+[tool.pylint."messages control"]
+disable = ["too-many-arguments", "too-few-public-methods", "too-many-instance-attributes", "fixme"]
 
 [tool.pylint.parameter_documentation]
-default-docstring-type = 'google'
+default-docstring-type = "google"
 
 
+# Mypy
 [tool.mypy]
 warn_return_any = true
 
 [[tool.mypy.overrides]]
-module = 'hockeygameclock.frontend.ui.*'
+module = "hockeygameclock.frontend.ui.*"
 ignore_missing_imports = true
 
 
-[tool.isort]
-profile = 'black'
-line_length = 120
-#src_paths = ['hockeygameclock', 'tests']
-
-
+# PyTest
 [tool.pytest.ini_options]
-addopts = '--cov=hockeygameclock'
-testpaths = ['tests']
+addopts = "--cov=hockeygameclock"
+testpaths = ["tests"]
