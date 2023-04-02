@@ -1,4 +1,4 @@
-name: Docs
+name: Docs 📖
 on:
   workflow_dispatch:
   push:
