@@ -90,6 +90,7 @@ class TimeManager:
         Returns:
             bool: _description_
         """
+        return True
 
     def break_is_over(self) -> bool:
         """_summary_
@@ -97,6 +98,7 @@ class TimeManager:
         Returns:
             bool: _description_
         """
+        return True
 
     def timeout_is_over(self) -> bool:
         """_summary_
@@ -104,3 +106,4 @@ class TimeManager:
         Returns:
             bool: _description_
         """
+        return True

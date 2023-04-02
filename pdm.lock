@@ -264,11 +264,11 @@ dependencies = [
 
 [[package]]
 name = "pyside6-daw"
-version = "0.1.0"
+version = "1.0.0"
 requires_python = ">=3.8,<3.11"
 git = "https://github.com/maerkl24/PySide6-DAW.git"
 ref = "v1.0.0"
-revision = "3877deb6a02b9fa79e1a76678d9d638b0cb36a4d"
+revision = "064b7d67217c6a05610dbd7e2d2232f7200b6a63"
 summary = "Desktop Application Widget (DAW) for PySide6"
 dependencies = [
     "PySide6>=6.2.0",

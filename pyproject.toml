@@ -7,7 +7,7 @@ build-backend = "pdm.pep517.api"
 # Project
 [project]
 name            = "hockeygameclock"
-version         = "1.0.0"
+dynamic         = ["version"]
 description     = "Nice hockey game clock for timekeepers."
 keywords        = ["Python", "Python3", "PySide6", "Qt", "GUI", "Desktop-Application"]
 classifiers     = [
@@ -34,6 +34,10 @@ repository = "https://github.com/maerkl24/hockeygameclock"
 
 
 # PDM
+[tool.pdm.version]
+source = "file"
+path   = "hockeygameclokc/__init__.py"
+
 [tool.pdm.dev-dependencies]
 format = [
     "isort>=5.12.0",
@@ -70,7 +74,6 @@ line-length = 120
 load-plugins = ["pylint.extensions.docparams"]
 ignored-modules = [
     "PySide6",
-    "hockeygameclock.frontend.ui",  # Ignore Qt user interface Python files (these are generated files)
 ]
 extension-pkg-whitelist = ["PySide6"]
 
