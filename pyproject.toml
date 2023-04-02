@@ -36,7 +36,7 @@ repository = "https://github.com/maerkl24/hockeygameclock"
 # PDM
 [tool.pdm.version]
 source = "file"
-path   = "hockeygameclokc/__init__.py"
+path   = "__init__.py"
 
 [tool.pdm.dev-dependencies]
 format = [
