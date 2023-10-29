@@ -23,7 +23,7 @@ jobs:
       - name: Install hockeygameclock and development tools
         run: pdm install -dG doc
       - name: Install Graphviz (needed by PlantUML)
-        run: apt-get install graphviz
+        run: sudo apt-get install graphviz
       - name: Run Sphinx
         run: |
           cd docs
