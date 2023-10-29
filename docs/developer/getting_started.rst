@@ -59,3 +59,12 @@ To build the documentation, run the following commands:
 
     cd docs
     pdm run make html
+
+Execute Hockey Game Clock (Development State)
+---------------------------------------------
+
+To execute the current development state of the ``hockeygameclock``, run the following commands:
+
+.. code-block:: shell
+
+    pdm pdm run python -m hockeygameclock
