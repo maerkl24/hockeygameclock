@@ -23,5 +23,5 @@ jobs:
         run: pdm install
       - name: Run pyside6-uic and pyside6-rcc
         run: |
-          pdm run pyside6-uic ui/main_window.ui -o hockeygameclock/frontend/ui/main_window.py --from-imports
-          pdm run pyside6-rcc ui/resources.qrc -o hockeygameclock/frontend/ui/resources_rc.py
+          pdm run pyside6-uic ui/clock_widget.ui -o hockeygameclock/frontend/generated/clock_widget.py --from-imports
+          # pdm run pyside6-rcc ui/resources.qrc -o hockeygameclock/frontend/ui/resources_rc.py

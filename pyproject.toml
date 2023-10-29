@@ -61,6 +61,7 @@ line-length = 120
 [tool.pylint.main]
 load-plugins = ["pylint.extensions.docparams"]
 ignored-modules = ["PySide6"]
+ignore-paths = ["hockeygameclock/frontend/generated"]
 extension-pkg-whitelist = ["PySide6"]
 
 [tool.pylint.format]
@@ -83,7 +84,7 @@ default-docstring-type = "google"
 warn_return_any = true
 
 [[tool.mypy.overrides]]
-module = "hockeygameclock.frontend.ui.*"
+module = "hockeygameclock.frontend.generated.*"
 ignore_missing_imports = true
 
 

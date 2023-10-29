@@ -5,8 +5,10 @@ This module defines the ``ClockPage`` class.
 
 from typing import Optional
 
-from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QGridLayout, QLabel, QWidget
+from PySide6.QtWidgets import QWidget
+
+# pylint: disable-next=import-error,no-name-in-module
+from hockeygameclock.frontend.generated.clock_widget import Ui_ClockWidget  # type: ignore[reportMissingImports]
 
 
 class ClockPage(QWidget):
@@ -14,9 +16,4 @@ class ClockPage(QWidget):
 
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
-        self._layout = QGridLayout(self)
-        label = QLabel(self)
-        label.setText("Clock")
-        label.setStyleSheet('color: rgb(255, 255, 255); font: 700 48pt "Segoe UI";')
-        label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self._layout.addWidget(label)
+        Ui_ClockWidget().setupUi(self)

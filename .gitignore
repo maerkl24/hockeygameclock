@@ -17,5 +17,5 @@ __pycache__/
 /docs/_build/
 
 # Generated Qt user interface Python files
-/hockeygameclock/frontend/ui/*.py
-!/hockeygameclock/frontend/ui/__init__.py
+/hockeygameclock/frontend/generated/*.py
+!/hockeygameclock/frontend/generated/__init__.py

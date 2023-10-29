@@ -6,7 +6,7 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": true,
     },
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.mypyEnabled": true,
@@ -15,4 +15,7 @@
         "hockeygameclock"
     ],
     "esbonio.sphinx.confDir": "",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
 }
