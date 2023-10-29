@@ -14,12 +14,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Set up Python 3.10 and PDM 2.4.9
+      - name: Set up Python 3.10 and PDM 2.10.0
         uses: pdm-project/setup-pdm@v3
         with:
           python-version: '3.10'
           architecture: x64
-          version: 2.4.9
+          version: 2.10.0
       - name: Install hockeygameclock and development tools
         run: pdm install -dG format
       - name: Run isort
