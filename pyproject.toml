@@ -23,7 +23,7 @@ classifiers = [
 authors = [{ name = "Kilian Märkl", email = "kilianmaerkl@web.de" }]
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.8,<3.11"
+requires-python = ">=3.9,<3.11"
 dependencies = [
     "PySide6==6.4.2",
     "PySide6-DAW @ git+https://github.com/maerkl24/PySide6-DAW.git@v1.0.0",
