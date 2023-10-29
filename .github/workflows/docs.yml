@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Python 3.10 and PDM 2.10.0
         uses: pdm-project/setup-pdm@v3
         with:
@@ -30,7 +30,7 @@ jobs:
           pdm run make html
           cd ..
       - name: Create and upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: docs/_build/html
   deploy:
