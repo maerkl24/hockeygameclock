@@ -34,18 +34,18 @@ To execute the formatter, run the following commands:
 .. code-block:: shell
 
     pdm run isort hockeygameclock
-    pdm run isort test
+    pdm run isort tests
     pdm run black hockeygameclock
-    pdm run black test
+    pdm run black tests
 
 To execute the linter, run the following commands:
 
 .. code-block:: shell
 
     pdm run pylint hockeygameclock
-    pdm run pylint test
+    pdm run pylint tests
     pdm run mypy hockeygameclock
-    pdm run mypy test
+    pdm run mypy tests
 
 To execute the tests, run the following commands:
 

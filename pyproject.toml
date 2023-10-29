@@ -6,11 +6,11 @@ build-backend = "pdm.pep517.api"
 
 # Project
 [project]
-name            = "hockeygameclock"
-dynamic         = ["version"]
-description     = "Nice hockey game clock for timekeepers."
-keywords        = ["Python", "Python3", "PySide6", "Qt", "GUI", "Desktop-Application"]
-classifiers     = [
+name = "hockeygameclock"
+dynamic = ["version"]
+description = "Nice hockey game clock for timekeepers."
+keywords = ["Python", "Python3", "PySide6", "Qt", "GUI", "Desktop-Application"]
+classifiers = [
     "Environment :: X11 Applications :: Qt",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -20,13 +20,11 @@ classifiers     = [
     "Topic :: Desktop Environment",
     "Typing :: Typed",
 ]
-authors         = [
-    {name = "Kilian Märkl", email = "kilianmaerkl@web.de"},
-]
-readme          = "README.md"
-license         = {file = "LICENSE"}
+authors = [{ name = "Kilian Märkl", email = "kilianmaerkl@web.de" }]
+readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.8,<3.11"
-dependencies    = [
+dependencies = [
     "PySide6==6.4.2",
     "PySide6-DAW @ git+https://github.com/maerkl24/PySide6-DAW.git@v1.0.0",
 ]
@@ -39,26 +37,13 @@ documentation = "https://maerkl24.github.io/hockeygameclock/"
 # PDM
 [tool.pdm.version]
 source = "file"
-path   = "hockeygameclock/__init__.py"
+path = "hockeygameclock/__init__.py"
 
 [tool.pdm.dev-dependencies]
-format = [
-    "isort>=5.12.0",
-    "black>=23.1.0",
-]
-lint = [
-    "pylint>=2.17.0",
-    "mypy>=1.1.1",
-]
-test = [
-    "pytest==7.2.2",
-    "pytest-cov==4.0.0",
-]
-doc = [
-    "Sphinx==6.1.3",
-    "furo==2023.3.27",
-    "sphinxcontrib-plantuml==0.25",
-]
+format = ["isort>=5.12.0", "black>=23.10.1"]
+lint = ["pylint>=3.0.2", "mypy>=1.6.1"]
+test = ["pytest>=7.4.3", "pytest-cov>=4.1.0"]
+doc = ["Sphinx==7.2.6", "furo==2023.9.10", "sphinxcontrib-plantuml==0.26"]
 
 
 # Isort
@@ -75,16 +60,19 @@ line-length = 120
 # Pylint
 [tool.pylint.main]
 load-plugins = ["pylint.extensions.docparams"]
-ignored-modules = [
-    "PySide6",
-]
+ignored-modules = ["PySide6"]
 extension-pkg-whitelist = ["PySide6"]
 
 [tool.pylint.format]
 max-line-length = 120
 
 [tool.pylint."messages control"]
-disable = ["too-many-arguments", "too-few-public-methods", "too-many-instance-attributes", "fixme"]
+disable = [
+    "too-many-arguments",
+    "too-few-public-methods",
+    "too-many-instance-attributes",
+    "fixme",
+]
 
 [tool.pylint.parameter_documentation]
 default-docstring-type = "google"
